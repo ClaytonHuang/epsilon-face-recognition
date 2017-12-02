@@ -29,3 +29,15 @@ cv2.__version__
 python __init__.py 0
 ```
 - 若输出Video窗口，显示视频流即python & OpenCV方面的环境配置成功
+
+## ATTENTION
+- 简单的改动可以直接commit；较大的改动，例如涉及模型变动等请发起Pull Request
+- 当commit的文件中包含比较大的文件时，请先上传到百度云盘，并在README.md文档中提供链接，并提供其在程序用的具体调用位置和方式等说明，具体请参考
+__训练测试数据集__
+中的att_faces训练集
+
+## 训练测试数据集
+### att_faces  
+- 链接&密码：链接:https://pan.baidu.com/s/1kVxMDAv  密码:ghv1        
+- 说明：包含40个人，每人10张不同光照、角度下的人脸头像，.pgm格式      
+- 程序调用位置：暂无     
