@@ -1,5 +1,5 @@
 # epsilon-face-recognition
-The first ARM algorithm contest of zhejiang university. This repository created by A5 epsilon team.
+The first ARM algorithm contest of zhejiang university. This repository created by A6 epsilon team.
 
 # Introduction
 当前维护的主程序目录为：python2 
