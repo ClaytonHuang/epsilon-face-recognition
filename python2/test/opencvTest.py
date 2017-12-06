@@ -12,11 +12,11 @@ sys.setdefaultencoding('utf-8')
 - 上面的0对应opencv中camera的id，作为系统参数sys.argv[1]输入
 '''
 
-def CatchUsbVideo(window_name, camera_idx):
+def CatchUsbVideo(window_name="Vedio"):
     cv2.namedWindow(window_name)
-    
     # 视频来源
     # 可以直接来自USB摄像头，也可换为视频
+    camera_idx = 0
     cap = cv2.VideoCapture(camera_idx)        
         
     while cap.isOpened():
@@ -32,9 +32,3 @@ def CatchUsbVideo(window_name, camera_idx):
     #释放摄像头并销毁所有窗口
     cap.release()
     cv2.destroyAllWindows() 
-    
-if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("无效的摄像头id:%s\r\n" % (sys.argv[0]))
-    else:
-        CatchUsbVideo("Vedio", int(sys.argv[1]))

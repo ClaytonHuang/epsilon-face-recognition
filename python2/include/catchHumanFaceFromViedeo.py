@@ -15,15 +15,14 @@ def datetimeNowToString():
       camera_idx opencv打开的摄像头id，默认为0
       catch_pic_num 每次读取的人脸图片数，默认为40
 '''
-def CatchPICFromVideo(window_name="catch-human-face", path_name="../image/catch-face-byopencv", camera_idx = 0, catch_pic_num = 40):
+def CatchPICFromVideo(window_name="catch-human-face", path_name="../images/catch-face-byopencv", camera_idx = 0, catch_pic_num = 40):
     cv2.namedWindow(window_name)
     
     #视频来源，可以来自一段已存好的视频，也可以直接来自USB摄像头
     cap = cv2.VideoCapture(camera_idx)                
     
     #告诉OpenCV使用人脸识别分类器
-    #TODO1，将opencv的分类器路径独立取出，并采用os.join
-    opencvInstallPath = ""
+    #TODO1，将opencv的分类器路径可能需要修改
     classfier = cv2.CascadeClassifier("/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml")
     
     #识别出人脸后要画的边框的颜色，RGB格式
@@ -50,7 +49,6 @@ def CatchPICFromVideo(window_name="catch-human-face", path_name="../image/catch-
                 x, y, w, h = faceRect                        
                 
                 #将当前帧保存为图片
-                # TODO3，将保存的图片文件夹改为时间戳
                 img_name = '%s/%d.jpg'%(path_name, num)                
                 image = frame[y - 10: y + h + 10, x - 10: x + w + 10]
                 cv2.imwrite(img_name, image)                                

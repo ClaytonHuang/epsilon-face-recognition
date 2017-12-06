@@ -4,5 +4,6 @@ from tensorflowTest import tensorflowTest
 
 if __name__ == "__main__":
 
-    CatchUsbVideo("video");
     tensorflowTest();
+    CatchUsbVideo("Video");
+
