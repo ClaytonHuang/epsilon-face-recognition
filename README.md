@@ -26,11 +26,12 @@ cv2.__version__
 - 确保笔记本自带摄像头可工作，或连接外置摄像头    
 - 在./test文件夹下，运行   
 ```
-python __init__.py 0
+python __init__.py
 ```
 - 若输出Video窗口，显示视频流即python & OpenCV方面的环境配置成功
+- 再输出tensorflow的线性模型拟合程序结果，tensorflow的配置成功
 
-## ATTENTION
+## ATTENTION!
 - 简单的改动可以直接commit；较大的改动，例如涉及模型变动等请发起Pull Request
 - 当commit的文件中包含比较大的文件时，请先上传到百度云盘，并在README.md文档中提供链接，并提供其在程序用的具体调用位置和方式等说明，具体请参考
 __训练测试数据集__
@@ -41,3 +42,29 @@ __训练测试数据集__
 - 链接&密码：链接:https://pan.baidu.com/s/1kVxMDAv  密码:ghv1        
 - 说明：包含40个人，每人10张不同光照、角度下的人脸头像，.pgm格式      
 - 程序调用位置：暂无     
+
+## 提交code到github的方法    
+- 在命令行中，执行
+``` 
+git clone git@github.com:Grandh/epsilon-face-recognition.git    
+cd epsilon-face-recognition 
+```
+进入项目目录
+- 创建remote连接    
+```
+git remote add origin git@github.com:Grandh/epsilon-face-recognition.git 
+```
+- 准备提交时，建议只提交.py文件    
+```
+git add *.py
+git commit -m "对修改做出的comment"
+git push origin master
+```
+- (PS)若有比较大或认为不确定的改动，建议新建一个分支    
+```
+git branch new_branch_name
+git checkout new_branch_name
+```
+
+
+
