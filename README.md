@@ -21,15 +21,16 @@ cv2.__version__
 ```
 若输出版本号"3.20"，则OpenCV3 for python配置成功
 
-### Test Environment
+### 环境测试   
 #### 摄像头调用与OpenCV环境  
 - 确保笔记本自带摄像头可工作，或连接外置摄像头    
 - 在./test文件夹下，运行   
 ```
 python __init__.py
 ```
+- 输出tensorflow的线性模型拟合程序结果，tensorflow的配置成功
 - 若输出Video窗口，显示视频流即python & OpenCV方面的环境配置成功
-- 再输出tensorflow的线性模型拟合程序结果，tensorflow的配置成功
+- 点击q键退出视频窗口
 
 ## ATTENTION!
 - 简单的改动可以直接commit；较大的改动，例如涉及模型变动等请发起Pull Request
