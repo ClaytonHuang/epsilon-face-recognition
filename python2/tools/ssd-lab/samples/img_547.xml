@@ -1,0 +1,11 @@
+<annotation><size><width>450</width><height>295</height></size>
+            <object>
+                <name>028</name>
+                <bndbox>
+                    <xmin>166</xmin>
+                    <ymin>73</ymin>
+                    <xmax>265</xmax>
+                    <ymax>182</ymax>
+                </bndbox>
+            </object>
+            </annotation>
